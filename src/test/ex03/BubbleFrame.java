@@ -43,18 +43,11 @@ public class BubbleFrame extends JFrame {
                 System.out.println(e.getKeyCode());
 
                 if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+                    player.left();
+                } else if (e.getKeyCode() == KeyEvent.VK_LEFT) {
                     player.right();
                 }
 
-                if (e.getKeyCode() == KeyEvent.VK_LEFT) {
-                    player.left();
-                }
-                if (e.getKeyCode() == KeyEvent.VK_UP) {
-                    player.up();
-                }
-                if (e.getKeyCode() == KeyEvent.VK_DOWN) {
-                    player.down();
-                }
             }
         });
     }
